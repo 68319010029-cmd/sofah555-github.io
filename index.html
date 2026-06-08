@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบสมัครสมาชิก - Form & Input Controls</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-card">
+        <h2>วิทยาลัยเทคนิคสว่างแดนดิน</h2>
+        <p class="form-subtitle">แบบฟอร์มลงทะเบียนเข้าใช้งานระบบสมาชิก</p>
+        <hr>
+
+        <form action="#" method="POST">
+            
+            <div class="input-group">
+                <label for="fullname">ชื่อ - นามสกุล <span class="required">*</span></label>
+                <input type="text" id="fullname" name="fullname" placeholder="สมฤทัย สินค้า" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">อีเมล <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="68319010029@gmail.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">รหัสผ่าน <span class="required">*</span></label>
+                <input type="password" id="password" name="password" placeholder="ตั้งรหัสผ่านอย่างน้อย 6 ตัวอักษร" minlength="6" required>
+            </div>
+
+            <div class="input-group">
+                <label for="education">ระดับการศึกษา</label>
+                <select id="education" name="education">
+                    <option value="pvc1">ปวช. 1</option>
+                    <option value="pvc2">ปวช. 2</option>
+                    <option value="pvc3">ปวช. 3</option>
+                    <option value="pvs1" selected>ปวส. 1 (ศศ.)</option>
+                    <option value="pvs2">ปวส. 2 (ศศ.)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>เพศ</label>
+                <div class="radio-checkbox-group">
+                    <label class="inline-label">
+                        <input type="radio" name="gender" value="male" checked> ชาย
+                    </label>
+                    <label class="inline-label">
+                        <input type="radio" name="gender" value="female"> หญิง
+                    </label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>ความสามารถพิเศษ (เลือกได้มากกว่า 1 ข้อ)</label>
+                <div class="radio-checkbox-group">
+                    <label class="inline-label">
+                        <input type="checkbox" name="skills" value="html-css"> การใช้โปรแกรมคอมพิวเตอร์
+                    </label>
+                    <label class="inline-label">
+                        <input type="checkbox" name="skills" value="network">เขียนโปรแกรม
+                    </label>
+                    <label class="inline-label">
+                        <input type="checkbox" name="skills" value="graphic"> Graphic Design
+                    </label>
+                    
+                      </div>
+                  </div>
+                    <div class="input-group">
+                <label for="address">ที่อยู่ / ช่องทางการติดต่อเพิ่มเติม</label>
+                <textarea id="address" name="address" rows="3" placeholder="กรอกที่อยู่ หรือ ลิงก์ Social Media ของคุณ..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">บันทึกข้อมูลสมัครสมาชิก</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
